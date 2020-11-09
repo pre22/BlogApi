@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_auth.registration',
+    'rest_framework_swagger',
 ]
 
 REST_FRAMEWORK = {
@@ -58,6 +59,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication',
     ]
+    # 'DEFAULT_SCHEMA_CLASS': [
+    #     'rest_framework.schemas.coreapi.AutoSchema',
+    # ]
 }
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
